@@ -1,7 +1,7 @@
 const map = L.map('map'); 
 
 // Set initial view coordinates and zoom level
-map.setView([51.505, -0.09], 13); 
+map.setView([51.505, -0.09], 10); 
 
 // Add OpenStreetMap tile layer
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -46,11 +46,13 @@ function success(pos) {
                 // Parse latitude and longitude from the fetched data
                 const lat = parseFloat(data.lat);
                 const lng = parseFloat(data.lng);
-                console.log("Latitude của tài liệu cuối cùng:", lat);
-                console.log("Longitude của tài liệu cuối cùng:", lng);
+
+                // Update the content of the coordinates div with the new latitude and longitude values
+                document.getElementById('lat').textContent = lat.toFixed(6);
+                document.getElementById('lng').textContent = lng.toFixed(6);
 
                 // Get accuracy of the geolocation
-                const accuracy = pos.coords.accuracy;
+                const accuracy = 5;
 
                 // Remove existing marker and circle layers from the map
                 if (marker) {
@@ -58,12 +60,12 @@ function success(pos) {
                     map.removeLayer(circle);
                 }
 
+                // Clear passedPositions array
+                passedPositions.splice(0, passedPositions.length);
+
                 // Add marker and circle layers to the map
                 marker = L.marker([lat, lng]).addTo(map);
                 circle = L.circle([lat, lng], { radius: accuracy }).addTo(map);
-
-                // Push the current position to the passed positions array
-                passedPositions.push([lat, lng]);
 
                 // Create markers for passed positions
                 for (const position of passedPositions) {
@@ -94,4 +96,9 @@ function error(err) {
 }
 
 // Watch for changes in geolocation and call the success or error functions accordingly
-navigator.geolocation.watchPosition(success, error);
+function updatePosition() {
+    navigator.geolocation.getCurrentPosition(success, error);
+}
+
+// Update position every 5 seconds
+setInterval(updatePosition, 5000);

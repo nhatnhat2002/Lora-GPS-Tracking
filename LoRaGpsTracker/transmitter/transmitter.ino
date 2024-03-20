@@ -1,15 +1,3 @@
-/*************************************************************************************************
- *  Created By: Tauseef Ahmad
- *  Created On: 1 July, 2023
- *  
- *  YouTube Video: https://youtu.be/XNE0Qm0NdLg
- *  My Channel: https://www.youtube.com/@AhmadLogs
- *  *********************************************************************************************
- *  Install the following libraries :
- *  1. AltSoftSerial - https://github.com/PaulStoffregen/AltSoftSerial
- *  2. TinyGPSPlus - Version 1.0.3
- ***********************************************************************************************/
-
 #include <SoftwareSerial.h>
 
 #include <TinyGPSPlus.h>
@@ -26,7 +14,7 @@ TinyGPSPlus gps;
 #define BAUDRATE 19200
 
 void setup() {
-  Serial.begin(BAUDRATE); // USB Serial
+  Serial.begin(9600); // USB Serial
   delay(1000);
   
   LoRaSerial.begin(BAUDRATE); // LoRa Software Serial
@@ -53,13 +41,12 @@ void loop() {
 void displayInfo()
 {
   if (gps.location.isValid())
-  {
-    String data;
-    
+  {    
+    String data = "\"lat\":\"";
     data += String(gps.location.lat(), 6);
-    data += ",";
+    data += "\",\"lng\":\"";
     data += String(gps.location.lng(), 6);
-    data += "|";
+    data += "\"";
     
     char charArray[20];    
     data.toCharArray(charArray, sizeof(charArray));
@@ -72,7 +59,7 @@ void displayInfo()
 }
 
 void sendLoraData(String data, int address) {
-  String myString = "AT+SEND=" + String(address) + "," + String(data.length()) + "," + data + "\r\n";
+  String myString =  data ;
   char* buf = (char*) malloc(sizeof(char) * myString.length() + 1);
   //Serial.println(myString);
   myString.toCharArray(buf, myString.length() + 1);
