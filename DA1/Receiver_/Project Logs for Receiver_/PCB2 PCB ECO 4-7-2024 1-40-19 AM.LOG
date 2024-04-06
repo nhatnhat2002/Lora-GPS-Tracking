@@ -1,0 +1,29 @@
+Added Pin To Net: NetName=Net?_1 Pin=?-1
+Added Pin To Net: NetName=M0 Pin=?-2
+Added Pin To Net: NetName=SDA1 Pin=H?-1
+Added Pin To Net: NetName=SDA Pin=H?-1
+Added Pin To Net: NetName=SCK Pin=H?-2
+Added Pin To Net: NetName=SCL Pin=H?-2
+Added Pin To Net: NetName=+3 Pin=H?-3
+Added Pin To Net: NetName=Mosi Pin=H?-3
+Added Pin To Net: NetName=M0 Pin=H?-4
+Added Pin To Net: NetName=Miso Pin=H?-4
+Added Pin To Net: NetName=M0 Pin=H?-6
+Added Pin To Net: NetName=Reset Pin=H?-7
+Added Pin To Net: NetName=+3 Pin=H?-8
+Added Pin To Net: NetName=M0 Pin=JP?-1
+Added Pin To Net: NetName=+5 Pin=JP?-2
+Added Pin To Net: NetName=TX2 Pin=JP?-4
+Added Pin To Net: NetName=RX2 Pin=JP?-5
+Added Pin To Net: NetName=M0 Pin=JP?-6
+Added Pin To Net: NetName=M0 Pin=JP?-7
+Added Pin To Net: NetName=+5 Pin=SW?-1
+Added Pin To Net: NetName=Net?_1 Pin=SW?-2
+Added Pin To Net: NetName=+5 Pin=SW?-3
+Added Pin To Net: NetName=Net?_1 Pin=SW?-4
+Added Member To Class: ClassName=Sheet2 Member=Component * ESP32 DEV KIT
+Added Member To Class: ClassName=Sheet2 Member=Component ? Header 2P 2.54 Duc Thang
+Added Member To Class: ClassName=Sheet2 Member=Component H? Oled
+Added Member To Class: ClassName=Sheet2 Member=Component H? Header 8P 2.54 Duc Thang
+Added Member To Class: ClassName=Sheet2 Member=Component JP? Lora E32
+Added Member To Class: ClassName=Sheet2 Member=Component SW? INI PUSH BUTTON SWITCH 4-PIN

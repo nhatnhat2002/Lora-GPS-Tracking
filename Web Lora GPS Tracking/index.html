@@ -8,7 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>makar</title>
+      <title>GPS Tracking</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -91,9 +91,7 @@
             </div>
          </div>
       </header>
-      <!-- end header inner -->
-      <!-- end header -->
-      <!-- banner -->
+
       <section class="banner_main">
          <div id="banner1" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -124,8 +122,8 @@
                   <div class="container">
                      <div class="carousel-caption">
                         <div class="text-bg">
-                           <h1>software</h1>
-                           <span>Maker</span>
+                           <h1>Embedded System</h1>
+                           <span>IoT</span>
                            <a class="read_more" href="#">About Us</a>
                            <ul class="social_team">
                               <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -146,12 +144,7 @@
             </a>
          </div>
       </section>
-      <!-- end banner -->
-      
-      <!-- about section -->
-      
-     
-      <!-- contact section -->
+
       <div id="contact" class="contact">
          <div class="container">
             <div class="row">
@@ -167,8 +160,12 @@
             <div class="container-fluid">
                <div class="row">
                   <div class="col-md-6">
-                     <div id="coordinates">Latitude: <span id="lat"></span> <br> Longitude: <span id="lng"></span></div>
-                  </div>
+                     <div class="news_form">
+                        <input class="letter_form" placeholder="ID" type="text" name="ID">
+                        <button id="searchBtn" onclick="handleSearch()">Search</button>
+                     </div>
+                     <div id="result"></div>
+                 </div>
                   <div class="col-md-6 padding_right2">
                      <div class="map_section">
                         <div id="map">
@@ -179,71 +176,6 @@
             </div>
          </div>
       </div>
-      <!-- end contact section -->
-      <!-- testimonial section -->
-      <div id="testimonial" class="testimonial">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="titlepage">
-                     <h2>Team</h2>
-                     <p></p>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-md-12">
-                  <div id="myCarousel" class="carousel slide testimonial_Carousel " data-ride="carousel">
-                     <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                     </ol>
-                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                           <div class="container">
-                              <div class="carousel-caption ">
-                                 <div class="row">
-                                    <div class="col-md-12">
-                                       <div class="testimonial_box">
-                                          <figure><img src="images/our.png" alt="#"/></figure>
-                                          <h3>Mr <br><span class="blu">Dinh Nhat</span></h3>
-                                          <p></p>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="carousel-item">
-                           <div class="container">
-                              <div class="carousel-caption">
-                                 <div class="row">
-                                    <div class="col-md-12">
-                                       <div class="testimonial_box">
-                                          <figure><img src="images/our.png" alt="#"/></figure>
-                                          <h3>Mr <br><span class="blu">Long Thien</span></h3>
-                                          <p></p>
-                                          
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                     <i class='fa fa-angle-left'></i>
-                     </a>
-                     <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                     <i class='fa fa-angle-right'></i>
-                     </a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- end testimonial section -->
-      <!--  footer -->
       <footer>
          <div class="footer">
             <div class="container">
