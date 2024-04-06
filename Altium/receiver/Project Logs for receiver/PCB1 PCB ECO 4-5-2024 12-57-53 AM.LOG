@@ -1,0 +1,4 @@
+Added Pin To Net: NetName=GND Pin=A?-3
+Added Member To Class: ClassName=Sheet1 Member=Component JP? Neo 6M
+Added Member To Class: ClassName=Sheet1 Member=Component SW? INI PUSH BUTTON SWITCH 4-PIN
+Added Room: Name=Sheet1
