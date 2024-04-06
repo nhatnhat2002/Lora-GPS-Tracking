@@ -1,6 +1,0 @@
-Removed Member From Class: ClassName=Sheet1 Member=L?
-Removed Member From Class: ClassName=Sheet1 Member=R?
-Added Pin To Net: NetName=Vin Pin=SW?-1
-Added Pin To Net: NetName=Vin Pin=SW?-3
-Added Net: Name=Vin
-Added Member To Class: ClassName=Sheet1 Member=Component JP? JP 1x5 2.54

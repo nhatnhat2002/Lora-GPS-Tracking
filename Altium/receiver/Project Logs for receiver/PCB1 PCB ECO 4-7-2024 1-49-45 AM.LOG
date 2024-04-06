@@ -1,0 +1,7 @@
+Change Component Designator: OldDesignator=Lora NewDesignator=JP?
+Change Component Designator: OldDesignator=Neo NewDesignator=JP?
+Change Component Designator: OldDesignator=Pin NewDesignator=5V
+Change Component Designator: OldDesignator=SW NewDesignator=SW?
+Added Member To Class: ClassName=Sheet1 Member=Component A? Nano
+Added Member To Class: ClassName=Sheet1 Member=Component JP? Lora E32
+Added Member To Class: ClassName=Sheet1 Member=Component JP? Neo 6M

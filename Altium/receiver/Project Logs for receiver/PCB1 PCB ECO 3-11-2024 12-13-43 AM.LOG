@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=TX1 Pin=wqe?-8
+Removed Pin From Net: NetName=RX1 Pin=wqe?-9
+Removed Pin From Net: NetName=RX2 Pin=wqe?-10
+Removed Pin From Net: NetName=TX2 Pin=wqe?-11
+Removed Member From Class: ClassName=Sheet1 Member=wqe?
+Added Member To Class: ClassName=Sheet1 Member=Component JP? JP 1x5 2.54
