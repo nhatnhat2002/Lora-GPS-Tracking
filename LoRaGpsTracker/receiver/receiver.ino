@@ -10,10 +10,10 @@
 #define SCREEN_HEIGHT 64 // OLED display height, in pixels
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 
-const char* ssid = "Dinhnhat";
-const char* password = "25012002";
+const char* ssid = "Tam";
+const char* password = "qa03012007";
 
-SoftwareSerial LoRaSerial(18,19); // RX, TX
+SoftwareSerial LoRaSerial(26,25); // RX, TX
 String endpoint = "https://us-east-1.aws.data.mongodb-api.com/app/application-0-vqinw/endpoint/sensor";
 HTTPClient http;
 
@@ -32,12 +32,11 @@ delay(5000);
 }
 
 void loop() {
-  // Check if data is available on Software Serial
   while (LoRaSerial.available()) {
     String data = LoRaSerial.readString();
     setOled();
     String Adata = "{" + data + ", \"stt\": \"" + check + "\"}";
-    Serial.println(Adata); // Send data to USB Serial
+    Serial.println(Adata); 
     displayJsonOnOled(Adata);
     display.display();
     sendData(Adata);
